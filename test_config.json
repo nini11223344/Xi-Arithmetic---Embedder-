@@ -1,0 +1,63 @@
+{
+  "sensor_configs": [
+    {
+      "name": "joint_torque_l0",
+      "sensor_type": "force_torque",
+      "physical_unit": "N\u00b7m",
+      "scale_factor": 50.0,
+      "min_expected": -50.0,
+      "max_expected": 50.0,
+      "channel_count": 1,
+      "noise_floor": 1e-06,
+      "max_anomaly_threshold": 3.0
+    },
+    {
+      "name": "imu_accel",
+      "sensor_type": "imu",
+      "physical_unit": "m/s\u00b2",
+      "scale_factor": 9.8,
+      "min_expected": -20.0,
+      "max_expected": 20.0,
+      "channel_count": 1,
+      "noise_floor": 1e-06,
+      "max_anomaly_threshold": 3.0
+    },
+    {
+      "name": "encoder_j0",
+      "sensor_type": "encoder",
+      "physical_unit": "rad",
+      "scale_factor": 6.283185307179586,
+      "min_expected": -6.283185307179586,
+      "max_expected": 6.283185307179586,
+      "channel_count": 1,
+      "noise_floor": 1e-06,
+      "max_anomaly_threshold": 3.0
+    },
+    {
+      "name": "depth_camera",
+      "sensor_type": "visual",
+      "physical_unit": "m",
+      "scale_factor": 5.0,
+      "min_expected": 0.0,
+      "max_expected": 5.0,
+      "channel_count": 1,
+      "noise_floor": 1e-06,
+      "max_anomaly_threshold": 3.0
+    }
+  ],
+  "n_zero_points": 5,
+  "window_length_min": 0.1,
+  "window_length_max": 1.0,
+  "sampling_rate": 100.0,
+  "baseline_stats": {
+    "joint_torque_l0": {
+      "0": {
+        "mean": 2e-05,
+        "std": 0.0,
+        "min": 2e-05,
+        "max": 2e-05,
+        "timestamp": 1795267957.1903539
+      }
+    }
+  }
+}
